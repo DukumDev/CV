@@ -1,0 +1,146 @@
+/* COLORES */
+:root {
+  --fondo: #30234b;        
+  --tarjeta: #4d61b2;     
+  --titulos: #c5a5e0;      
+  --texto: #ffffff;        
+}
+ 
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+}
+ 
+h1, h2, h3 {
+  color: var(--titulos);
+}
+ 
+/* INICIO */
+.hero {
+  min-height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 80px 250px 20px;
+}
+ 
+.hero-content h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+ 
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.hero-content img {
+  width: 260px;
+  height: auto;
+  border-radius: 50%;
+}
+ 
+/* SECCIONES: Sobre mí, Habilidades y Proyectos */
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+ 
+.contenedor h2 {
+  margin-bottom: 20px;
+}
+
+#sobre-mi {
+  padding-top: 20px;
+  
+}
+ 
+/* HABILIDADES */
+.grid-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  :hover {
+    background-color: rgb(0, 200, 255);
+  }
+}
+ 
+.skill-card {
+  background-color: var(--tarjeta);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+ 
+/* PROYECTOS */
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+ 
+.proyecto-card {
+  background-color: var(--tarjeta);
+  padding: 25px;
+  border-radius: 10px;
+}
+ 
+.proyecto-card h3 {
+  margin-bottom: 10px;
+}
+ 
+.tags {
+  margin-top: 15px;
+}
+ 
+.tags span {
+  background-color: var(--fondo);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* REDES */
+.redes-card {
+  display: flex;
+  gap: 15px;
+  background-color: var(--tarjeta);
+  padding: 30px;
+  border-radius: 10px;
+  width: fit-content;   
+}
+
+.redes-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;  
+  display: block;
+}
+ 
+/* CONTACTO */
+#contacto {
+  background-color: var(--tarjeta);
+  text-align: center;
+  padding: 50px 20px;
+}
+ 
+#contacto h2 {
+  margin-bottom: 10px;
+}
+ 
+.email,
+.telefono {
+  font-weight: bold;
+  margin-top: 8px;
+}
